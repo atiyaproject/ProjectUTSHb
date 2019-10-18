@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Main_MenuUtama"
+    android:background="#DC143C"
+    >
+    
+
+<TextView
+    android:id="@+id/hb_text"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:text="Halal Beauty"
+    android:textColor="#ffffff"
+    android:textSize="35dp"
+    android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/imgadmin"
+    android:background="#FF1493"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phh" />
+
+    <ImageButton
+        android:id="@+id/imagebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btt" />
+    
+    <ImageButton
+        android:id="@+id/imageCos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/cosmeticc" />
+
+    <ImageButton
+        android:id="@+id/imageDiy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/diyy" />
+
+    <ImageButton
+        android:id="@+id/imageAbus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/about_uss" />
+</LinearLayout>
+</RelativeLayout>

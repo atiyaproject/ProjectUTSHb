@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atiya.projectuts"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hblogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.atiya.projectuts.splashscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+       
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Main activity -->
+        
+		<activity android:name="com.atiya.projectuts.menuawal_act"></activity>
+		<activity
+		android:name="com.atiya.projectuts.Main_MenuUtama"
+		android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar" 
+             >
+		</activity>
+		<activity
+		android:name="com.atiya.projectuts.MainAdmin_MenuUtama"
+		android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar" 
+             >
+		</activity>
+		<activity android:name ="com.atiya.projectuts.Login"></activity>
+        <activity android:name = "com.atiya.projectuts.about_us"></activity>
+        <activity android:name = "com.atiya.projectuts.MainProdHalalAdmin"></activity>
+        <activity android:name = "com.atiya.projectuts.Main_ProdHalal"></activity>
+		<activity android:name = "com.atiya.projectuts.prodhalal_AddAct"></activity>
+        <activity android:name = "com.atiya.projectuts.EditProdHalal"></activity>
+        
+        <activity android:name = "com.atiya.projectuts.MainDiyAdmin"></activity>
+        <activity android:name = "com.atiya.projectuts.Main_Diy"></activity>
+		<activity android:name = "com.atiya.projectuts.Diy_AddAct"></activity>
+        <activity android:name = "com.atiya.projectuts.EditDiy"></activity>
+        <activity android:name = "com.atiya.projectuts.detail_diy"></activity>
+        
+        <activity android:name = "com.atiya.projectuts.MainBeautyAdmin"></activity>
+        <activity android:name = "com.atiya.projectuts.Main_Beauty"></activity>
+		<activity android:name = "com.atiya.projectuts.Beauty_AddAct"></activity>
+        <activity android:name = "com.atiya.projectuts.EditBeauty"></activity>
+        <activity android:name = "com.atiya.projectuts.detail_beauty"></activity>
+        
+        <activity android:name = "com.atiya.projectuts.MainVeganAdmin"></activity>
+        <activity android:name = "com.atiya.projectuts.Main_Vegan"></activity>
+		<activity android:name = "com.atiya.projectuts.Vegan_AddAct"></activity>
+        <activity android:name = "com.atiya.projectuts.EditVegan"></activity>
+        <activity android:name = "com.atiya.projectuts.detail_vegan"></activity>
+        
+        <activity android:name = "com.atiya.projectuts.MainHalalAdmin"></activity>
+        <activity android:name = "com.atiya.projectuts.Main_Halal"></activity>
+		<activity android:name = "com.atiya.projectuts.Halal_AddAct"></activity>
+        <activity android:name = "com.atiya.projectuts.EditHalal"></activity>
+        <activity android:name = "com.atiya.projectuts.detail_halal"></activity>
+    </application>
+
+</manifest>
